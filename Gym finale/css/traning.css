@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+/* Navbar  */
+.navbar {
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background: black;
+}
+.navbar-brand {
+  color: orange;
+  margin-left: 5%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.aboutus-banner {
+  width: auto;
+  height: auto;
+}
+.navbar .nav-link {
+  font-size: 18px;
+  color: white;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: orange;
+  text-decoration: underline;
+}
+.navbar-toggler {
+  background-color: white;
+  color: white;
+}
+.t-btn {
+  color: white;
+  background-color: orange;
+  border-radius: 28px;
+  padding: 10px 20px 10px 20px;
+}
+.t-btn:hover {
+  background-color: green;
+  color: white;
+}
+/* Navbar end */
+
+/* why */
+#why-choose {
+  color: white;
+  background: rgb(73, 72, 72);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Trianer */
+.trainer-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5%;
+}
+.trainer-texttwo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.t-sp {
+  color: orange;
+}
+.trainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+.tn {
+  display: flex;
+  flex-direction: column;
+}
+.tn-btn {
+  width: 100%;
+  padding: 20px;
+  margin-top: -40px;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 12%;
+}
+.tn-btn:hover {
+  background-color: red;
+  color: white;
+}
+.first img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* testimo */
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+  margin: auto;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgb(8, 8, 8);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 10px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+.gallery-title,
+.all-title {
+  font-size: 36px;
+  color: #5e5e5e;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
+}

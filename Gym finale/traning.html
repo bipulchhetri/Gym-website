@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bipul</title>
+    <!-- cdn bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/traning.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <style>
+        .bdm {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        @media (max-width: 600px) {
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+        html,
+        body {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            background: #FFF;
+
+        }
+
+        .wrapper {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container-fostrap {
+            display: table-cell;
+            padding: 1em;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        h1.heading {
+            color: #fff;
+            font-size: 1.15em;
+            font-weight: 900;
+            margin: 0 0 0.5em;
+            color: #505050;
+        }
+
+        @media (min-width: 450px) {
+            h1.heading {
+                font-size: 3.55em;
+            }
+        }
+
+        @media (min-width: 760px) {
+            h1.heading {
+                font-size: 3.05em;
+            }
+        }
+
+        @media (min-width: 900px) {
+            h1.heading {
+                font-size: 3.25em;
+                margin: 0 0 0.3em;
+            }
+        }
+
+        .card {
+            display: block;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            transition: box-shadow .25s;
+
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .img-card {
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            display: block;
+            overflow: hidden;
+        }
+
+        .img-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: all .25s ease;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .card-title {
+            margin-top: 0px;
+            font-weight: 700;
+            font-size: 1.65em;
+        }
+
+        .card-title a {
+            color: #000;
+            text-decoration: none !important;
+        }
+
+        .card-read-more {
+            border-top: 1px solid #D4D4D4;
+            background-color: orange;
+            color: white;
+        }
+
+        .card-read-more a {
+            text-decoration: none !important;
+            padding: 10px;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="img/hero/logo.jpg" alt="Bootstrap" width="100px" height="100px">
+            </a>
+            <div class=" fw-bold fs-3 brand-text">
+                <a href="/" class="text-warning text-decoration-none"> Spark Family <br>
+                    Fitness Studio</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traning.html">Traning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <a href="contact.html" target="_blank"> <button type="button" class="btn btn-rounded fw-bold">Join
+                            Now</button></a>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="bdm m-auto">
+        <img src="img/breadcrumb-bg.jpg" alt="Snow" style="width: 100%;">
+        <div class="centered">
+            <h2 class="text-white fs-1 text-uppercase fw-bolder text-center">TRANING</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb text-white text-center align-items-center justify-content-center">
+                    <li class="breadcrumb-item "><a href="/" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-warning " aria-current="page">TRANING</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section class="wrapper">
+        <div class="container-fostrap">
+            <div>
+                <h1 class="gallery-title">portfolio</h1>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="/">
+                                    <img src="img/service/services-2.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                            Weight Management Workouts
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, tempora.
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="" class="btn btn-link btn-block">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                    <img src="img/service/services-2.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a
+                                            href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">
+                                            CrossFit Workouts Traning
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, unde!
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="/" class="btn btn-link btn-block">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                    <img src="img/service/services-2.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a
+                                            href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">
+                                            Strength Enhancement Workouts
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quam.
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="/" class="btn btn-link btn-block">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                    <img src="img/service/services-2.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a
+                                            href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">
+                                            Zumba Workouts
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
+                                        perspiciatis!
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="/" class="btn btn-link btn-block">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                    <img src="img/service/services-2.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a
+                                            href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">
+                                            Weight Lifting
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nostrum.
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="/" class="btn btn-link btn-block">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card"
+                                    href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                                    <img src="img/service/services-3.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a
+                                            href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+
+                                            Powerlifting
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, alias?
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html"
+                                        class="btn btn-link btn-block">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why choose Us -->
+    <section id="why-choose">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="headng text-center m-auto mt-5">
+                        <h4 class="fw-bolder">WHY CHOSE US?</h4>
+                        <!-- <h2 class="fw-bolder ">PUSH YOUR LIMITS FORWARD</h2> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5 text-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="content">
+                        <img class="e-logo" src="img/equ/u-1.png" alt="">
+                        <h5 class="fw-bolder fs-6">QUALITY EQUIPMENT</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="content">
+                        <img class="e-logo" src="img/equ/u-2.png" alt="">
+                        <h5 class=" fw-bolder fs-6">HEALTHY NUTRITION PLAN
+
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="content">
+                        <img class="e-logo" src="img/equ/u-3.png" alt="">
+                        <h5 class="fw-bolder fs-6">SHOWER SERVICE</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="content">
+                        <img class="e-logo" src="img/equ/u-4.png" alt="">
+                        <h5 class="fw-bolder fs-7">UNIQUE TO YOUR NEEDS
+
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallary -->
+    <div class="gallary">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="img/gall/portfolio1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="img/gall/portfolio11.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="img/gall/portfolio12.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds" />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <img src="img/gall/portfolio6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="img/gall/portfolio10.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds" />
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="img/gall/portfolio2 (1).jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds" />
+            </div>
+
+        </div>
+    </div>
+    <!-- Gallary end -->
+
+    <!-- Trianer -->
+    <div class="container">
+        <h3 class="trainer-text">GETTING INTO SHAPE</h3>
+        <P class="trainer-texttwo">WORLD CLASS <span class="t-sp">TRAINNERS</span></P>
+        <div class="trainer">
+            <div class="first">
+                <div class="tn">
+                    <img src="img/trainer/trainer1.jpg" alt="">
+                    <button type="button" class="btn btn-rounded text-center tn-btn">SYLVIA HOLT <br> Gym Trainer
+                    </button>
+                </div>
+
+            </div>
+            <div class="first">
+                <div class="tn">
+                    <img src="img/trainer/trainer2.jpg" alt="">
+                    <button type="button" class="btn btn-rounded text-center tn-btn">SYLVIA HOLT <br>Gym Trainer
+                    </button>
+                </div>
+
+            </div>
+            <div class="first">
+                <div class="tn">
+                    <img src="img/trainer/trainer3.jpg" alt="">
+                    <button type="button" class="btn btn-rounded text-center tn-btn">SYLVIA HOLT <br> Gym Trainer
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Trianer end -->
+
+    <!-- Testimonial -->
+    <section class="container">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="img/testimonial/testim1.jpg" alt="" class="image" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                        saepe provident dolorem a quaerat quo error facere nihil deleniti
+                        eligendi ipsum adipisci, fugit, architecto amet asperiores
+                        doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="img/testimonial/testim2.jpg" alt="" class="image" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                        saepe provident dolorem a quaerat quo error facere nihil deleniti
+                        eligendi ipsum adipisci, fugit, architecto amet asperiores
+                        doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="img/testimonial/testim3.jpg" alt="" class="image" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                        saepe provident dolorem a quaerat quo error facere nihil deleniti
+                        eligendi ipsum adipisci, fugit, architecto amet asperiores
+                        doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- footer -->
+
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-5">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fs-1">SPARK <SPan class="fs-1 text-warning">FITNESS</SPan></h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                        voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-decoration-underline">Menu</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Disclimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 text-center text-decoration-underline">Social Media</h5>
+
+                    <ul class="list-unstyled d-flex justify-content-around">
+                        <li>
+                            <a href="#!" class="text-primary"> <i class="bi bi-facebook"
+                                    style="font-size: 25px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-danger"> <i class="bi bi-instagram"
+                                    style="font-size: 25px;"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="#!" class="text-info"> <i class="bi bi-twitter" style="font-size: 25px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-success fa-lg"><i class="bi bi-linkedin"
+                                    style="font-size: 25px;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="">BIPUL</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--  -->
+    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- link js  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
